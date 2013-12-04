@@ -55,3 +55,8 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+#
+github "mou",        "1.1.3"
+github "virtualbox", "1.0.9"
+github "vagrant",    "3.0.0"
+github "osx",        "2.2.0"
