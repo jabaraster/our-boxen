@@ -52,6 +52,7 @@ Service {
 Homebrew::Formula <| |> -> Package <| |>
 
 node default {
+  include wget
   # core modules, needed for most things
   include dnsmasq
   include git
