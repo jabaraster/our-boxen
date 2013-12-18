@@ -1,3 +1,4 @@
+
 class people::jabaraster {
     include mou
     include virtualbox
@@ -18,11 +19,16 @@ class people::jabaraster {
         provider => pkgdmg,
     }
 
-# osx
+# OS X
     include osx::finder::show_hidden_files
     include osx::finder::unhide_library
     include osx::dock::autohide
     class { 'osx::dock::icon_size':
         size => 50
+    }
+
+# Grunt
+    nodejs::module { 'grunt-cli':
+      node_version => 'v0.4.2'
     }
 }
